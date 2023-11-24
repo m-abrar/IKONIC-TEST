@@ -22,3 +22,5 @@ Route::get('/', function () {
 Route::post('/webhook', WebhookController::class)->name('webhook');
 
 Route::get('/merchant/order-stats', [MerchantController::class, 'orderStats'])->name('merchant.order-stats');
+
+require __DIR__.'/auth.php'; //new addition
