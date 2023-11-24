@@ -1,5 +1,5 @@
 <?php
-
+//This test is completed
 namespace Tests\Feature\Services;
 
 use App\Exceptions\AffiliateCreateException;
@@ -16,7 +16,8 @@ use Tests\TestCase;
 
 class AffiliateServiceTest extends TestCase
 {
-    use RefreshDatabase, WithFaker;
+    use RefreshDatabase;
+    use WithFaker;
 
     protected Merchant $merchant;
 

@@ -1,5 +1,5 @@
 <?php
-
+// Just completed this test
 namespace Tests\Feature;
 
 use App\Models\Affiliate;

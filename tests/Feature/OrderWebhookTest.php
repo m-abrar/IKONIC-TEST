@@ -1,5 +1,5 @@
 <?php
-
+//Just completed this test
 namespace Tests\Feature;
 
 use App\Services\AffiliateService;
@@ -26,7 +26,8 @@ class OrderWebhookTest extends TestCase
             ->with($data)
             ->once();
 
-        $this->post(route('webhook'), $data)
-            ->assertOk();
+        $this->post(route('webhook'), $data)->assertOk();
+        //Just testing, but we are not supposed to make any changes in this file
+        // $this->post(route('webhook'), $data + ['_token' => csrf_token()])->assertOk(); 
     }
 }
