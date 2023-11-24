@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @property int $id
+ * @property int $user_id
  * @property string $domain
  * @property string $display_name
  * @property string $turn_customers_into_affiliates
@@ -20,6 +21,7 @@ class Merchant extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'domain',
         'display_name',
         'turn_customers_into_affiliates',

@@ -15,11 +15,13 @@ class ApiService
     /**
      * Create a new discount code for an affiliate
      *
-     * @param Merchant $merchant
+     * @param Merchant $merchant //not required at this time
      *
      * @return array{id: int, code: string}
      */
-    public function createDiscountCode(Merchant $merchant): array
+
+    public function createDiscountCode(): array
+    // public function createDiscountCode(Merchant $merchant): array
     {
         return [
             'id' => rand(0, 100000),
@@ -37,6 +39,7 @@ class ApiService
      */
     public function sendPayout(string $email, float $amount)
     {
-        //
+        // 
+        // It's fine when you don't return anything, but errors or issues.
     }
 }

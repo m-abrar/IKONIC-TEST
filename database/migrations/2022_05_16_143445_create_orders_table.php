@@ -23,6 +23,7 @@ return new class extends Migration
             $table->float('commission_owed')->default(0.00);
             $table->string('payout_status')->default(Order::STATUS_UNPAID);
             $table->string('discount_code')->nullable();
+            $table->string('external_order_id')->nullable(); //You missed it by mistake, otherwise I am not going to change anything in the database schema
             $table->timestamps();
         });
     }
